@@ -31,7 +31,8 @@ nav a:hover { color:#1b5e20; transform:scale(1.05); }
 /* ---------------- HERO ---------------- */
 .hero { text-align:center; padding:4rem 2rem; background:linear-gradient(135deg,#77b255,#5aa76f); color:white; position:relative; z-index:1; }
 .hero h1 { font-size:2.5rem; margin-bottom:0.5rem; }
-.hero p { font-size:1.2rem; opacity:0.95; }
+.hero p { font-size:1.2rem; opacity:0.95; 
+ margin-right: 26px;       }
 
 /* ---------------- SOBRE O AÇÚCAR ---------------- */
 .sobre { max-width:800px; margin:2rem auto; padding:1rem; background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.08); transition:transform 0.2s ease; }
@@ -54,3 +55,4 @@ button:hover { background:#3b7d3e; transform:scale(1.05); }
 
 /* ---------------- RODAPÉ ---------------- */
 footer { background:#4e944f; color:white; text-align:center; padding:1rem; font-size:0.9rem; }
+
