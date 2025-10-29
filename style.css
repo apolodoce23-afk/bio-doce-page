@@ -1,0 +1,56 @@
+/* ---------------- RESET ---------------- */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f6f5ef;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ---------------- EMOJIS ---------------- */
+.emoji-container { position: fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0; overflow:hidden; }
+.emoji { position:absolute; font-size:2rem; opacity:0; animation-name:float; animation-timing-function:linear; animation-iteration-count:infinite; }
+@keyframes float {
+  0% { transform: translateY(100vh) translateX(0); opacity:0; }
+  10% { opacity:1; }
+  100% { transform: translateY(-10vh) translateX(var(--x)); opacity:0; }
+}
+
+/* ---------------- HEADER ---------------- */
+.header { display:flex; justify-content:space-between; align-items:center; background:#fff; padding:20px 60px; box-shadow:0 2px 8px rgba(0,0,0,0.05); position:relative; z-index:1; }
+.logo { font-size:1.8rem; font-weight:600; color:#388e3c; }
+.logo i { margin-right:8px; color:#81c784; }
+nav a { color:#388e3c; text-decoration:none; margin-left:20px; font-weight:500; transition:0.3s; }
+nav a:hover { color:#1b5e20; transform:scale(1.05); }
+
+/* ---------------- HERO ---------------- */
+.hero { text-align:center; padding:4rem 2rem; background:linear-gradient(135deg,#77b255,#5aa76f); color:white; position:relative; z-index:1; }
+.hero h1 { font-size:2.5rem; margin-bottom:0.5rem; }
+.hero p { font-size:1.2rem; opacity:0.95; }
+
+/* ---------------- SOBRE O AÇÚCAR ---------------- */
+.sobre { max-width:800px; margin:2rem auto; padding:1rem; background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.08); transition:transform 0.2s ease; }
+.sobre:hover { transform:scale(1.01); }
+.sobre h2 { color:#388e3c; margin-bottom:1rem; }
+.sobre .principal { font-weight:600; margin-bottom:0.5rem; }
+.sobre .secundario { font-style:italic; color:#777; }
+
+/* ---------------- CURIOSIDADES ---------------- */
+.curiosidades { max-width:800px; margin:2rem auto; padding:1.5rem; background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.08); text-align:center; }
+.curiosidades h2 { color:#388e3c; margin-bottom:0.8rem; }
+#fact { display:block; margin-top:1rem; font-style:italic; color:#4e944f; transition:opacity 0.3s ease; }
+
+/* ---------------- CONTATO ---------------- */
+.contato { max-width:800px; margin:2rem auto; padding:1rem; background:white; border-radius:10px; box-shadow:0 3px 10px rgba(0,0,0,0.08); text-align:center; }
+.contato h2 { color:#388e3c; margin-bottom:0.8rem; }
+.links { display:flex; justify-content:center; gap:1rem; margin-top:1rem; }
+button { background:#4e944f; color:white; border:none; padding:0.7rem 1.4rem; border-radius:6px; cursor:pointer; transition:0.3s; }
+button:hover { background:#3b7d3e; transform:scale(1.05); }
+
+/* ---------------- RODAPÉ ---------------- */
+footer { background:#4e944f; color:white; text-align:center; padding:1rem; font-size:0.9rem; }

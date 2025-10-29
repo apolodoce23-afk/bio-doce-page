@@ -1,0 +1,15 @@
+# 1️⃣ Puxa as mudanças do GitHub antes de começar a editar
+git pull origin main
+# ⚠️ Importante: evita conflitos se outra pessoa tiver mexido no repositório
+
+# 2️⃣ Depois de editar os arquivos no VS Code, adiciona todas as mudanças
+git add .
+# O ponto (.) significa "todos os arquivos modificados"
+
+# 3️⃣ Cria um commit com mensagem explicando o que mudou
+git commit -m "Descrição da mudança"
+# Exemplo: git commit -m "Atualiza seção de Açúcar Orgânico e emojis"
+
+# 4️⃣ Envia suas alterações para o GitHub
+git push origin main
+# Isso atualiza o repositório online e o GitHub Pages reflete as mudanças
